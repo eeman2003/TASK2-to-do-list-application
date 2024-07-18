@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Task Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>To-Do Task Application</h1>
+            <nav>
+                <button id="addTaskBtn">Add Task</button>
+                <button id="taskListBtn">Task List</button>
+                <button id="deletedTaskBtn">Deleted Task</button>
+            </nav>
+        </header>
+
+        <main>
+            <div id="addTaskDiv" class="content">
+                <h2>Add Task</h2>
+                <form id="taskForm">
+                    <label for="taskTitle">Task Title:</label>
+                    <input type="text" id="taskTitle" required>
+                    <label for="taskDescription">Task Description:</label>
+                    <textarea id="taskDescription" required></textarea>
+                    <button type="submit">Add Task</button>
+                </form>
+            </div>
+
+            <div id="taskListDiv" class="content">
+                <h2>Task List</h2>
+                <ul id="taskList">No Task</ul>
+            </div>
+
+            <div id="deletedTaskDiv" class="content">
+                <h2>Deleted Task</h2>
+                <ul id="deletedTaskList">No Task</ul>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
